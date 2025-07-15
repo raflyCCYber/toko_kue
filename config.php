@@ -3,11 +3,11 @@
 $is_online = $_SERVER['HTTP_HOST'] !== 'localhost';
 
 if ($is_online) {
-    // Konfigurasi untuk hosting online
-    $host = 'nama_host_database_anda'; // Ganti dengan host database hosting
-    $dbname = 'nama_database_anda';    // Ganti dengan nama database di hosting
-    $username = 'username_database_anda'; // Ganti dengan username database hosting
-    $password = 'password_database_anda'; // Ganti dengan password database hosting
+    // Konfigurasi untuk hosting online (000webhost)
+    $host = 'localhost';  // 000webhost uses 'localhost'
+    $dbname = 'id21181794_tokokue';    // Use your 000webhost database name
+    $username = 'id21181794_admin'; // Use your 000webhost database username
+    $password = 'P@ssw0rd123!'; // Use your 000webhost database password
 } else {
     // Konfigurasi untuk development local
     $host = 'localhost';

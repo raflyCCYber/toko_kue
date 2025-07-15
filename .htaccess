@@ -1,0 +1,10 @@
+Options +FollowSymLinks
+RewriteEngine On
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "POST, GET, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type"
+
+<IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_METHOD} !^(POST|GET|OPTIONS) [NC]
+    RewriteRule .* - [F,L]
+</IfModule>
